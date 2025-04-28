@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -8,5 +8,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  
+  visibilidadeSenha = false;
+
+  mostrarSenha(): void {
+    this.visibilidadeSenha =!this.visibilidadeSenha;
+  }
+ 
 }

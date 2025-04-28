@@ -6,9 +6,10 @@ header {
     padding-top: -20px;
 
 }
-.navCont{
- align-self: center;
-    
+
+.navCont {
+    align-self: center;
+
 }
 
 .offcanvas-dark-header {
@@ -24,18 +25,29 @@ header {
 }
 
 .offcanvas-body ul {
-   gap: 12px;
+    gap: 12px;
 }
+
 .offcanvas-body {
-   background-color: #21BC6B;
+    background-color: #21BC6B;
 }
-.offcanvas-body li{
+
+.offcanvas-body li {
     color: #FFF;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; 
+    line-height: 130%;
+}
+
+.offcanvas-body li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.active {
+    color: #21BC6B;
 }
 
 .navbar-brand {
@@ -129,6 +141,25 @@ header {
     gap: 30px
 }
 
+.pulsar {
+    animation: pulsarAnimacao 0.3s;
+}
+
+@keyframes pulsarAnimacao {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 .card {
     border-radius: 8px;
     box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.20);
@@ -139,41 +170,18 @@ header {
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s ease;
 
 }
 
 .card p {
-    color: #3E3E3E;
+    color: #0d0b0b;
     font-family: "Poppins", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
 
-}
-
-.termosB :nth-child(1) {
-    background-color: transparent;
-}
-
-.termosB :nth-child(2) {
-    background-color: #EEE7DA;
-}
-
-.termosB :nth-child(3) {
-    background-color: #A5DD9B;
-}
-
-.termosB :nth-child(4) {
-    background-color: #C5EBAA;
-}
-
-.termosB :nth-child(5) {
-    background-color: #FFFFDD;
-}
-
-.termosB :nth-child(6) {
-    background-color: #AFC8AD;
 }
 
 @media screen and (max-width: 767px) {

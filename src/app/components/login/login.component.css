@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+
 }
 
 .formsLogin {
@@ -44,7 +45,6 @@
     color: #CDD4DA;
 }
 
-
 .forms input,
 .forms button {
     width: 350px;
@@ -56,6 +56,10 @@
 }
 
 .forms input[type="password"] {
+    width: 260px;
+    border-right: none;
+}
+.forms input[type="text"] {
     width: 260px;
     border-right: none;
 }
@@ -85,7 +89,12 @@ button:focus {
     box-shadow: none;
     border-color: #ccc;
 }
-
+.input-group-text i{
+    color: #5a595d;
+}
+.input-group-text {
+    cursor: pointer;
+}
 
 .cadastrar {
     text-align: center;
@@ -139,6 +148,9 @@ input::placeholder {
     }
 
     .forms input[type="password"] {
+        width: 160px;
+    }
+    .forms input[type="text"] {
         width: 160px;
     }
 

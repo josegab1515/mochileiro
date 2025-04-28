@@ -8,5 +8,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
+  visibilidadeSenha = false;
+
+  mostrarSenha(): void{
+    this.visibilidadeSenha = !this.visibilidadeSenha;
+  }
+
 
 }
