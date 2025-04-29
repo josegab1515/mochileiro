@@ -1,10 +1,7 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "dist/projeto-mochileiro/**", "use": "@vercel/static" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "dist/projeto-mochileiro/index.html" }
-    ]
-  }
-  
+  "version": 2,
+  "public": "dist/projeto-mochileiro",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
